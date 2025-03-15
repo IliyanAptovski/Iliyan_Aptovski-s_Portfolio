@@ -1,3 +1,90 @@
-body{
-    background-color: #FFFFFF;
+/* Colors */
+:root {
+    --primary-color: #2F4F4F;
+    --secondary-color: #DCD5C3;
+    --accent-color: #D4AF37;
+    --text-color: #333333;
+    --background-color: #FFFFFF;
+
+    /* Fonts */
+    --font-body: 'Garamond', serif;
+    --font-heading: 'Trajan Pro', serif;
+    --font-accent: 'Great Vibes', cursive;
+    --font-nav: 'Playfair Display', serif;
 }
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Navigation Bar */
+  .navigation {
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo Styling */
+  .logo-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Name Styling */
+  .name-item p {
+    font-family: var(--font-accent);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+  }
+  
+  /* Navigation Links */
+  .navigation li {
+    margin: 0 15px;
+  }
+  
+  .navigation li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-family: var(--font-nav);
+    transition: color 0.3s ease;
+    text-align: right;
+  }
+  
+  .navigation li a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Download CV button styling */
+  .navigation li:last-child a {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation li:last-child a:hover {
+    background-color: var(--primary-color);
+  }
+
+ /* Move the "Download CV" button to the right */
+.navigation li:last-child {
+    margin-left: auto;
+  }
