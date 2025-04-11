@@ -1,5 +1,9 @@
-/* Colors */
 :root {
+  --link-color: var(--primary-color);
+  --link-hover: var(--accent-color);
+  --section-spacing: 60px;
+
+  /* Colors */
   --primary-color: #2F4F4F;
   --secondary-color: #DCD5C3;
   --accent-color: #D4AF37;
@@ -131,7 +135,7 @@ body {
 
 /* Section Styling */
 .section {
-  padding: 60px 20px;
+  padding: var(--section-spacing) 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -221,15 +225,38 @@ body {
   gap: 20px;
 }
 
+.projects-grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-card {
   background-color: var(--secondary-color);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.project-card::after {
+  content: "View →";
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: var(--accent-color);
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover::after {
+  opacity: 1;
 }
 
 .project-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transform: translateY(-5px);
 }
 
@@ -286,6 +313,23 @@ body {
   font-style: italic;
   color: var(--primary-color);
   margin: 5px 0;
+}
+
+.course-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.course-item a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.course-institution a {
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* Footer */
