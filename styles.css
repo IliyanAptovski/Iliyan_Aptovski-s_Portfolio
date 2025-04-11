@@ -1,90 +1,362 @@
 /* Colors */
 :root {
-    --primary-color: #2F4F4F;
-    --secondary-color: #DCD5C3;
-    --accent-color: #D4AF37;
-    --text-color: #333333;
-    --background-color: #FFFFFF;
+  --primary-color: #2F4F4F;
+  --secondary-color: #DCD5C3;
+  --accent-color: #D4AF37;
+  --text-color: #333333;
+  --background-color: #FFFFFF;
 
-    /* Fonts */
-    --font-body: 'Garamond', serif;
-    --font-heading: 'Trajan Pro', serif;
-    --font-accent: 'Great Vibes', cursive;
-    --font-nav: 'Playfair Display', serif;
+  /* Fonts */
+  --font-body: 'Raleway', sans-serif;
+  --font-heading: 'Cinzel', serif;
+  --font-nav: 'Raleway', sans-serif;
+  --font-accent: 'Dancing Script', cursive;
 }
 
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: var(--font-body);
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
-  /* Navigation Bar */
-  .navigation {
-    list-style: none;
-    padding: 10px 20px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    background-color: var(--background-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Logo Styling */
-  .logo-item img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  /* Name Styling */
-  .name-item p {
-    font-family: var(--font-accent);
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-    margin: 0;
-  }
-  
-  /* Navigation Links */
-  .navigation li {
-    margin: 0 15px;
-  }
-  
-  .navigation li a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    font-family: var(--font-nav);
-    transition: color 0.3s ease;
-    text-align: right;
-  }
-  
-  .navigation li a:hover {
-    color: var(--accent-color);
-  }
-  
-  /* Download CV button styling */
-  .navigation li:last-child a {
-    background-color: var(--accent-color);
-    color: var(--background-color);
-    padding: 8px 12px;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navigation li:last-child a:hover {
-    background-color: var(--primary-color);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
- /* Move the "Download CV" button to the right */
+body {
+  font-family: var(--font-body);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navigation {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo Styling */
+.logo-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Name Styling */
+.name-item p {
+  font-family: var(--font-signature);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Navigation Links */
+.navigation li {
+  margin: 0 15px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-family: var(--font-nav) !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  text-align: right;
+}
+
+.navigation li a:hover {
+  color: var(--accent-color);
+}
+
+/* Download CV button styling */
+.navigation li:last-child a {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation li:last-child a:hover {
+  background-color: var(--primary-color);
+}
+
+/* Move the "Download CV" button to the right */
 .navigation li:last-child {
-    margin-left: auto;
+  margin-left: auto;
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--secondary-color);
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-family: var(--font-nav);
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.hero-line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--accent-color);
+  margin: 20px auto;
+}
+
+/* Section Styling */
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+/* About Section */
+.section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skill-category {
+  flex: 1;
+  min-width: 250px;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category h3 {
+  font-family: var(--font-nav);
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.skill-category ul {
+  list-style-position: inside;
+}
+
+.skill-category li {
+  margin-bottom: 8px;
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* Languages Section */
+.languages-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.language-item {
+  margin-bottom: 20px;
+}
+
+.language-name {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.language-level {
+  height: 6px;
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.level-bar {
+  height: 100%;
+  background-color: var(--accent-color);
+}
+
+/* Courses Section */
+.courses-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.course-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+.course-institution {
+  font-style: italic;
+  color: var(--primary-color);
+  margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: var(--background-color);
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation {
+      flex-wrap: wrap;
+      justify-content: center;
   }
+  
+  .navigation li:last-child {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+  }
+  
+  .section-content {
+      flex-direction: column;
+  }
+  
+  .hero-title {
+      font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation li {
+      margin: 0 8px;
+  }
+  
+  .hero-title {
+      font-size: 2rem;
+  }
+  
+  .section {
+      padding: 40px 15px;
+  }
+  
+  .section-title {
+      font-size: 1.8rem;
+  }
+}
