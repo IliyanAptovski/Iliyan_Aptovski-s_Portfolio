@@ -1,158 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@700&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/images/favicon.png" type="image/png">
-    <title>Iliyan Aptovski's Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@700&family=Raleway:wght@500;600&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+  <title>Iliyan Aptovski's Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-          <ul class="navigation">
-            <li class="logo-item">
-              <img src="/images/logo.png" alt="Logo" class="logo">
-            </li>
-            <li class="name-item">
-              <p>Iliyan Aptovski</p>
-            </li>
+  <header>
+    <nav>
+      <ul class="navigation">
+        <li class="logo-item">
+          <img src="/images/logo.png" alt="Logo" class="logo">
+        </li>
+        <li class="name-item">
+          <p>Iliyan Aptovski</p>
+        </li>
 
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="">Download CV</a></li>
-          </ul>
-        </nav>
-    </header>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="">Download CV</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Iliyan Aptovski</h1>
-                <p class="hero-subtitle">Aspiring Software Developer & QA Engineer</p>
-                <div class="hero-line"></div>
-            </div>
-        </section>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Iliyan Aptovski</h1>
+        <p class="hero-subtitle">Aspiring Software Developer & QA Engineer</p>
+        <div class="hero-line"></div>
+      </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="section">
-            <h2 class="section-title">About Me</h2>
-            <div class="section-content">
-                <div class="about-text">
-                    <p>
-                      I'm Iliyan Aptovski, a motivated university student with a strong interest in software development and quality assurance. 
-                      With hands-on experience in C#, SQL, and web technologies, I enjoy building practical software solutions and ensuring they meet the highest standards. 
-                      I'm currently diving deeper into software testing methodologies while expanding my programming skills.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <img src="/images/profile-photo.png" alt="Profile Photo">
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Technical</h3>
-                    <ul>
-                        <li>C#, HTML, CSS, SQL and a bit of C++</li>
-                        <li>SQL, NoSQL, SSMS & MySQL</li>
-                        <li>Visual Studio, VS Code, SAP, Jira, Trello, Git & GitHub</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Teamwork & Cooperation</li>
-                        <li>Attention to Detail</li>
-                        <li>Ability to establish and maintain effective working relationships with colleagues and clients</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Pet Store Management System</h3>
-                    <p>
-                      Developed a C# WinForms applicationwith Firebase integration using RestSharp, JSON serialization, CRUD operations, and asynchronous API calls.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Project description goes here. Brief overview of what it does and technologies used.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>Project description goes here. Brief overview of what it does and technologies used.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Languages Section -->
-        <section id="languages" class="section">
-            <h2 class="section-title">Languages</h2>
-            <div class="languages-container">
-                <div class="language-item">
-                    <span class="language-name">Bulgarian</span>
-                    <div class="language-level">
-                        <div class="level-bar" style="width: 100%;"></div>
-                    </div>
-                </div>
-                <div class="language-item">
-                    <span class="language-name">English</span>
-                    <div class="language-level">
-                        <div class="level-bar" style="width: 75%;"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Courses Section -->
-        <section id="courses" class="section">
-            <h2 class="section-title">Courses & Certifications</h2>
-            <div class="courses-list">
-                <div class="course-item">
-                    <h3> <a href="">Manual QA Engineer</a> </h3>
-                    <p class="course-institution"> <a href="https://softuni.bg/" target="_blank">Software University (SoftUni)</a> | September 2024 - April 2025</p>
-                    <p class="course-description">
-                      Fundamental knowledge of defect identification, user experience testing, and manual testing techniques. 
-                      Overview of operating systems, networks, databases, programming languages, software architectures, and software development tools. 
-                    </p>
-                </div>
-                <div class="course-item">
-                    <h3> <a href="https://softuni.bg/Certificates/Details/236720/ad051c2d" target="_blank">Programming Basics</a> </h3>
-                    <p class="course-institution"> <a href="https://softuni.bg/" target="_blank">Software University (SoftUni)</a> | January 2025</p>
-                    <p class="course-description">
-                      Introductory module designed to equip students with fundamental programming skills.
-                      This course focuses on teaching the core principles of programming, including syntax, logic, and problem-solving techniques.
-                      It lays the groundwork for more advanced studies in software development and engineering.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>Social Links</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/iliyan-aptovski-216224350/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/IliyanAptovski" target="_blank">GitHub</a>
-                <a href="mailto:iliian.aptovski@gmail.com" target="_blank">iliian.aptovski@gmail.com</a>
-            </div>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-content">
+        <div class="about-text">
+          <p>
+            I'm Iliyan Aptovski, a motivated university student with a strong interest in software development and
+            quality assurance.
+            With hands-on experience in C#, SQL, and web technologies, I enjoy building practical software solutions and
+            ensuring they meet the highest standards.
+            I'm currently diving deeper into software testing methodologies while expanding my programming skills.
+          </p>
         </div>
-    </footer>
+        <div class="about-image">
+          <img src="/images/profile-photo.png" alt="Profile Photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="courses-list"> <!-- Reusing courses-list style -->
+        <div class="course-item">
+          <h3>Data Entry and Processing Specialist</h3>
+          <p class="course-institution">Arexim Engineering EAD | April 2025 - Present</p>
+          <p class="course-description">
+            At Arexim Engineering EAD, I am responsible for entering and maintaining company data within SAP and other internal information systems, ensuring all entries align with approved documentation.
+            I ensure the accuracy, consistency, and quality of electronic records to support daily business operations.
+            My role includes regularly updating, archiving, and managing data files in compliance with lifecycle management policies.
+            I also generate periodic reports and data extracts to assist in decision-making and enhance operational efficiency.
+            Additionally, I collaborate with cross-functional teams to improve data integrity and streamline processing workflows.
+            I actively support system optimizations and contribute to data validation and quality control initiatives.
+          </p>
+        </div>
+        <div class="course-item">
+          <h3>Pizza Maker</h3>
+          <p class="course-institution">Suni 30 SMLLC | June 2024 - September 2024</p>
+          <p class="course-description">
+            Responsible for the preparation and creation of pizzas, ensuring consistency and customer satisfaction.
+            Managed sales of pizzas and soft drinks, providing customer service.
+            Maintained a clean and organized work area while adhering to food safety standards.
+            Assisted with inventory management and restocking of supplies as needed.
+          </p>
+        </div>
+        <div class="course-item">
+          <h3>Pizza Maker</h3>
+          <p class="course-institution">Kosflex SMLLC | June 2023 - September 2023</p>
+          <p class="course-description">
+            Responsible for the preparation and creation of pizzas, ensuring consistency and customer satisfaction.
+            Managed sales of pizzas and soft drinks, providing customer service.
+            Maintained a clean and organized work area while adhering to food safety standards.
+            Assisted with inventory management and restocking of supplies as needed.
+          </p>
+        </div>
+        <div class="course-item">
+          <h3>Pizza Maker</h3>
+          <p class="course-institution">Stanimashka rabotilnitsa SMLLC | July 2022 - September 2022</p>
+          <p class="course-description">
+            Responsible for the preparation and creation of pizzas, ensuring consistency and customer satisfaction.
+            Managed sales of pizzas and soft drinks, providing customer service.
+            Maintained a clean and organized work area while adhering to food safety standards.
+            Assisted with inventory management and restocking of supplies as needed.
+          </p>
+        </div>
+        <div class="course-item">
+          <h3>Pizza Maker</h3>
+          <p class="course-institution">GRIX SMLLC | July 2021 - September 2021</p>
+          <p class="course-description">
+            Responsible for the preparation and creation of pizzas, ensuring consistency and customer satisfaction.
+            Managed sales of pizzas and soft drinks, providing customer service.
+            Maintained a clean and organized work area while adhering to food safety standards.
+            Assisted with inventory management and restocking of supplies as needed.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="courses-list">
+        <div class="course-item">
+          <h3>Bachelor's degree in Information and Computer Engineering with Management</h3>
+          <p class="course-institution">University of Plovdiv "Paisii Hilendarski" | October 2024 - Present</p>
+          <p class="course-description">
+            In progress with a focus on information technology, software development, and business management. 
+            The program includes studies in cloud computing, mobile applications, data management, software development, and project management, preparing students for roles in both the technical and management sectors of the IT industry.
+          </p>
+          <p class="course-description">
+            <br>Focused on core IT skills such as computer systems, web development, computer networks, and information security, along with management and innovation.
+            The course emphasizes the application of technology in business environments, providing students with a blend of technical and management knowledge for professional IT roles. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+      <h2 class="section-title">Courses & Certifications</h2>
+      <div class="courses-list">
+        <div class="course-item">
+          <h3> <a href="" target="_blank">Manual QA Engineer</a> </h3>
+          <p class="course-institution"> <a href="https://softuni.bg/" target="_blank">Software University (SoftUni)</a>
+            | September 2024 - April 2025</p>
+          <p class="course-description">
+            Fundamental knowledge of defect identification, user experience testing, and manual testing techniques.
+            Overview of operating systems, networks, databases, programming languages, software architectures, and
+            software development tools.
+          </p>
+        </div>
+        <div class="course-item">
+          <h3> <a href="https://softuni.bg/Certificates/Details/236720/ad051c2d" target="_blank">Programming Basics</a>
+          </h3>
+          <p class="course-institution"> <a href="https://softuni.bg/" target="_blank">Software University (SoftUni)</a>
+            | January 2025</p>
+          <p class="course-description">
+            Introductory module designed to equip students with fundamental programming skills.
+            This course focuses on teaching the core principles of programming, including syntax, logic, and
+            problem-solving techniques.
+            It lays the groundwork for more advanced studies in software development and engineering.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Technical</h3>
+          <ul>
+            <li>C#, HTML, CSS, SQL and a bit of C++</li>
+            <li>SQL, NoSQL, SSMS & MySQL</li>
+            <li>Visual Studio, VS Code, SAP, Jira, Trello, Git & GitHub</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Teamwork & Cooperation</li>
+            <li>Attention to Detail</li>
+            <li>Ability to establish and maintain effective working relationships with colleagues and clients</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <a href="https://github.com/IliyanAptovski/PetStore_Management_System" target="_blank" class="project-card">
+          <h3>Pet Store Management System</h3>
+          <p> Developed a C# WinForms application with Firebase integration using RestSharp, JSON serialization, CRUD operations, and asynchronous API calls.</p>
+        </a>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p></p>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="section">
+      <h2 class="section-title">Languages</h2>
+      <div class="languages-container">
+        <div class="language-item">
+          <span class="language-name">Bulgarian</span>
+          <div class="language-level">
+            <div class="level-bar" style="width: 100%;"></div>
+          </div>
+        </div>
+        <div class="language-item">
+          <span class="language-name">English</span>
+          <div class="language-level">
+            <div class="level-bar" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Social Links</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/iliyan-aptovski-216224350/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/IliyanAptovski" target="_blank">GitHub</a>
+        <a href="mailto:iliian.aptovski@gmail.com" target="_blank">iliian.aptovski@gmail.com</a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
