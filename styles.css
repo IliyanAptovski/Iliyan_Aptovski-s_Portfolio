@@ -29,6 +29,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
+  padding-top: 60px;
 }
 
 /* Navigation Bar */
@@ -40,9 +41,34 @@ body {
   align-items: center;
   background-color: var(--background-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position: fixed; /* Changed from sticky to fixed */
   top: 0;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navigation.scrolled {
+  padding: 5px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-item img {
+  transition: all 0.3s ease; /* Smooth logo transition */
+}
+
+.navigation.scrolled .logo-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.name-item p {
+  transition: all 0.3s ease; /* Smooth name transition */
+}
+
+.navigation.scrolled .name-item p {
+  font-size: 1.2rem;
 }
 
 /* Logo Styling */
