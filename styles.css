@@ -107,24 +107,6 @@ body {
   color: var(--accent-color);
 }
 
-/* Download CV button styling */
-.navigation li:last-child a {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-  padding: 8px 12px;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.navigation li:last-child a:hover {
-  background-color: var(--primary-color);
-}
-
-/* Move the "Download CV" button to the right */
-.navigation li:last-child {
-  margin-left: auto;
-}
-
 /* Hero Section */
 .hero {
   background-color: var(--secondary-color);
