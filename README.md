@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website, built to showcase my skills, projects, and experience as a Developer/QA Engineer.
 
 ## 🌐 Live Website
-You can view the live portfolio  <a href="https://iliyanaptovski.github.io/Iliyan_Aptovski-s_Portfolio/" target="_blank" rel="noopener noreferrer">here:</a>
+You can view the live portfolio  <a href="https://iliyanaptovski.github.io/Iliyan_Aptovski-s_Portfolio/" target="_blank" rel="noopener noreferrer">here.</a>
 
 ## 📁 About the Project
 
