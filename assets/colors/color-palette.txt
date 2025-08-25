@@ -1,5 +1,0 @@
-Primary: Dark Slate Gray (#2F4F4F)
-Secondary: Light Taupe (#DCD5C3)
-Accent: Warm Gold (#D4AF37)
-Text: Dark Charcoal (#333333)
-Background: White (#FFFFFF)
