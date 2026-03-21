@@ -270,6 +270,32 @@ header {
   border-radius: 4px;
 }
 
+.language-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.language-name {
+  font-weight: 500;
+  font-family: var(--font-heading);
+}
+
+.language-badge {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--card-border);
+}
+
+.language-badge.native {
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+}
+
 /* ========== Footer ========== */
 footer {
   padding: 3rem 10%;
