@@ -173,7 +173,7 @@ header {
 .timeline-item {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 16px;
   backdrop-filter: blur(10px);
   transform: translateY(40px);
@@ -246,7 +246,7 @@ header {
   font-family: var(--font-heading);
 }
 
-/* ========== Publications & Conferences ========== */
+/* ========== Publications & Competitions ========== */
 .publication-meta {
   font-size: 0.85rem;
   color: #aaa;
